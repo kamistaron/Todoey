@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		43C2F8862217199200815D92 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C2F8852217199200815D92 /* Item.swift */; };
+		433FF915221B29440093C8AF /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433FF914221B29440093C8AF /* CategoryViewController.swift */; };
+		4380CF1722193E16007B68E2 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4380CF1522193E16007B68E2 /* DataModel.xcdatamodeld */; };
 		43CDE49722115E03005E4572 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43CDE49622115E03005E4572 /* AppDelegate.swift */; };
 		43CDE49922115E03005E4572 /* TodoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43CDE49822115E03005E4572 /* TodoListViewController.swift */; };
 		43CDE49C22115E03005E4572 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43CDE49A22115E03005E4572 /* Main.storyboard */; };
@@ -16,7 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		43C2F8852217199200815D92 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		433FF914221B29440093C8AF /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
+		4380CF1622193E16007B68E2 /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
 		43CDE49322115E03005E4572 /* Todoey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Todoey.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43CDE49622115E03005E4572 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		43CDE49822115E03005E4572 /* TodoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListViewController.swift; sourceTree = "<group>"; };
@@ -40,7 +42,7 @@
 		43C2F88722171A8F00815D92 /* Data Model */ = {
 			isa = PBXGroup;
 			children = (
-				43C2F8852217199200815D92 /* Item.swift */,
+				4380CF1522193E16007B68E2 /* DataModel.xcdatamodeld */,
 			);
 			path = "Data Model";
 			sourceTree = "<group>";
@@ -48,6 +50,7 @@
 		43C2F88822171A9F00815D92 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				433FF914221B29440093C8AF /* CategoryViewController.swift */,
 				43CDE49822115E03005E4572 /* TodoListViewController.swift */,
 			);
 			path = Controllers;
@@ -170,9 +173,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				433FF915221B29440093C8AF /* CategoryViewController.swift in Sources */,
 				43CDE49922115E03005E4572 /* TodoListViewController.swift in Sources */,
+				4380CF1722193E16007B68E2 /* DataModel.xcdatamodeld in Sources */,
 				43CDE49722115E03005E4572 /* AppDelegate.swift in Sources */,
-				43C2F8862217199200815D92 /* Item.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,6 +322,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AN29654GJC;
 				INFOPLIST_FILE = Todoey/Info.plist;
@@ -327,6 +332,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.kmrnpy.Todoey;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -336,6 +342,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AN29654GJC;
 				INFOPLIST_FILE = Todoey/Info.plist;
@@ -345,6 +352,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.kmrnpy.Todoey;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -372,6 +380,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4380CF1522193E16007B68E2 /* DataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4380CF1622193E16007B68E2 /* DataModel.xcdatamodel */,
+			);
+			currentVersion = 4380CF1622193E16007B68E2 /* DataModel.xcdatamodel */;
+			path = DataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 43CDE48B22115E03005E4572 /* Project object */;
 }
